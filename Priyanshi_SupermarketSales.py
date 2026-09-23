@@ -13,13 +13,13 @@ st.markdown("---")
 @st.cache_data
 def load_data():
     # Kaggle Dataset Read
-    df = pd.read_csv('supermarket_sales.csv')
+    df = pd.read_csv('SuperMarket Analysis.csv')
     return df
 
 try:
     df = load_data()
 except Exception as e:
-    st.error("Error: 'supermarket_sales.csv' file nahi mili. Kripya file ko same folder mein rakhein.")
+    st.error("Error: 'SuperMarket Analysis' file nahi mili. Kripya file ko same folder mein rakhein.")
     st.stop()
 
 # 3. Sidebar Filters
